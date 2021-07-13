@@ -8,7 +8,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <tabbedpane id="bd56e" binding="tabbedPane1" default-binding="true">
+      <tabbedpane id="bd56e" binding="fontTabPane">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="200" height="200"/>
@@ -236,7 +236,7 @@
                       </component>
                     </children>
                   </grid>
-                  <grid id="1eca4" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                  <grid id="1eca4" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                     <margin top="0" left="0" bottom="0" right="0"/>
                     <constraints>
                       <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -246,34 +246,20 @@
                     <children>
                       <hspacer id="c2504">
                         <constraints>
-                          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                         </constraints>
                       </hspacer>
                       <vspacer id="26f9e">
                         <constraints>
-                          <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                          <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                         </constraints>
                       </vspacer>
                       <component id="d8006" class="javax.swing.JCheckBox" binding="framelessModeMacOSOnlyCheckBox" default-binding="true">
                         <constraints>
-                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <text resource-bundle="messages/MessageBundle" key="settings.general.other.themed.titlebar"/>
-                        </properties>
-                      </component>
-                      <component id="4ed76" class="javax.swing.JSpinner" binding="customFontSize">
-                        <constraints>
-                          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties/>
-                      </component>
-                      <component id="4ec6d" class="javax.swing.JCheckBox" binding="overrideEditorFontSizeCheckBox" default-binding="true">
-                        <constraints>
-                          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text resource-bundle="messages/MessageBundle" key="settings.general.other.global.font.size"/>
                         </properties>
                       </component>
                       <hspacer id="e21a4">
@@ -281,17 +267,25 @@
                           <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                         </constraints>
                       </hspacer>
-                      <component id="97513" class="javax.swing.JLabel">
+                      <component id="6cbcd" class="javax.swing.JCheckBox" binding="themeChangeAnimationCheckBox" default-binding="true">
                         <constraints>
-                          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
-                          <text resource-bundle="messages/MessageBundle" key="settings.general.other.global.font.label"/>
+                          <text resource-bundle="messages/MessageBundle" key="settings.general.other.animation.label"/>
+                        </properties>
+                      </component>
+                      <component id="2af43" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text resource-bundle="messages/MessageBundle" key="settings.general.other.glass-notification.title"/>
                         </properties>
                       </component>
                       <component id="69ec9" class="javax.swing.JSlider" binding="notificationOpacitySlider">
                         <constraints>
-                          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <majorTickSpacing value="10"/>
@@ -301,28 +295,12 @@
                           <value value="90"/>
                         </properties>
                       </component>
-                      <component id="2af43" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text resource-bundle="messages/MessageBundle" key="settings.general.other.glass-notification.title"/>
-                        </properties>
-                      </component>
                       <component id="3eeb5" class="javax.swing.JCheckBox" binding="makeNotificationsTransparentCheckBox" default-binding="true">
                         <constraints>
-                          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <text resource-bundle="messages/MessageBundle" key="settings.general.other.glass-notification.enabled"/>
-                        </properties>
-                      </component>
-                      <component id="6cbcd" class="javax.swing.JCheckBox" binding="themeChangeAnimationCheckBox" default-binding="true">
-                        <constraints>
-                          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text resource-bundle="messages/MessageBundle" key="settings.general.other.animation.label"/>
                         </properties>
                       </component>
                     </children>
@@ -350,6 +328,69 @@
                   </component>
                 </children>
               </grid>
+            </children>
+          </scrollpane>
+          <scrollpane id="925ea">
+            <constraints>
+              <tabbedpane title-resource-bundle="messages/MessageBundle" title-key="settings.fonts.title"/>
+            </constraints>
+            <properties/>
+            <border type="empty"/>
+            <children>
+              <scrollpane id="e6b16">
+                <constraints/>
+                <properties/>
+                <border type="empty"/>
+                <children>
+                  <grid id="be94a" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints/>
+                    <properties/>
+                    <border type="empty"/>
+                    <children>
+                      <component id="2ce0e" class="javax.swing.JSpinner" binding="customFontSize">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <hspacer id="6b151">
+                        <constraints>
+                          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <vspacer id="ea4f2">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <component id="5fa7" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text resource-bundle="messages/MessageBundle" key="settings.general.other.global.font.label"/>
+                        </properties>
+                      </component>
+                      <component id="d83f2" class="javax.swing.JCheckBox" binding="overrideEditorFontSizeCheckBox">
+                        <constraints>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text resource-bundle="messages/MessageBundle" key="settings.general.other.global.font.size"/>
+                        </properties>
+                      </component>
+                      <vspacer id="e03d5">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                            <preferred-size width="-1" height="5"/>
+                          </grid>
+                        </constraints>
+                      </vspacer>
+                    </children>
+                  </grid>
+                </children>
+              </scrollpane>
             </children>
           </scrollpane>
           <grid id="d5338" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">

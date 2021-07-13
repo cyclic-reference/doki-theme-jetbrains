@@ -10,7 +10,6 @@ import com.intellij.openapi.ui.DialogWrapper;
 import com.intellij.openapi.util.NlsContexts;
 import com.intellij.ui.ColorUtil;
 import com.intellij.ui.JBColor;
-import com.intellij.util.ui.JBUI;
 import com.intellij.util.ui.UIUtil;
 import io.unthrottled.doki.config.ThemeConfig;
 import io.unthrottled.doki.stickers.CurrentSticker;
@@ -26,7 +25,7 @@ public class ThemeSettingsUI implements SearchableConfigurable, Configurable.NoS
   private final ThemeSettingsModel themeSettingsModel = ThemeSettings.createThemeSettingsModel();
   private ThemeSettingsModel initialThemeSettingsModel = ThemeSettings.createThemeSettingsModel();
 
-  private JTabbedPane tabbedPane1;
+  private JTabbedPane fontTabPane;
   private JPanel rootPane;
   private JComboBox currentThemeWomboComboBox;
   private JCheckBox showStickerCheckBox;
@@ -42,11 +41,11 @@ public class ThemeSettingsUI implements SearchableConfigurable, Configurable.NoS
   private JButton chooseImageButton;
   private JCheckBox useCustomStickerCheckBox;
   private JTextPane generalLinks;
-  private JSpinner customFontSize;
-  private JCheckBox overrideEditorFontSizeCheckBox;
   private JSlider notificationOpacitySlider;
   private JCheckBox makeNotificationsTransparentCheckBox;
   private JCheckBox themeChangeAnimationCheckBox;
+  private JSpinner customFontSize;
+  private JCheckBox overrideEditorFontSizeCheckBox;
 
 
   @Override
